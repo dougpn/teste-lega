@@ -27,7 +27,7 @@ input {
 }
 
 .root-content-blur {
-    @include root-content-style();
+  @include root-content-style();
   filter: blur(2px);
   pointer-events: none;
 }
@@ -189,7 +189,6 @@ input[type="checkbox"]:checked {
   padding: 16px 24px 16px 24px;
   gap: 8px;
   border-radius: 8px;
-  opacity: 0px;
   border: none;
   border-color: transparent;
   cursor: pointer;
@@ -266,7 +265,6 @@ input[type="checkbox"]:checked {
   gap: 16px;
   border: 1px solid #d7dde9;
   border-radius: 8px;
-  opacity: 0px;
 }
 
 .modal-exclude-text {
@@ -296,6 +294,7 @@ input[type="checkbox"]:checked {
   font-size: $button-font-size;
   font-weight: $font-weight;
   color: $color;
+  cursor: pointer;
 }
 
 .modal-button {
