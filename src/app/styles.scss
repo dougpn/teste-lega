@@ -1,0 +1,313 @@
+$button-width: 272px;
+$desktop-button-width: 185px;
+$button-height: 51px;
+$button-padding: 16px 24px;
+$button-radius: 8px;
+$button-font-size: 16px;
+
+$cancel-background: #e7eefb;
+$confirm-gradient: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+$exclude-gradient: linear-gradient(90deg, #d30707 0%, #f05353 68.65%);
+
+$font-color: #ffffff;
+
+button,
+input {
+  font-family: inherit;
+}
+@mixin root-content-style() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+.root-content {
+  @include root-content-style();
+}
+
+.root-content-blur {
+    @include root-content-style();
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.header {
+  @media screen {
+    @media (min-width: 768px) {
+      width: 100vw;
+      padding: 24px 56px 40px 56px;
+    }
+  }
+  padding: 24px 0px 24px;
+  display: flex;
+  border-bottom: 1px solid #d7dde9;
+}
+
+.header-container {
+  @media screen {
+    @media (min-width: 768px) {
+      display: flex;
+      height: 36px;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+  width: 100%;
+}
+
+.header-content {
+  width: 240px;
+}
+
+.header-welcome {
+  @media screen {
+    @media (min-width: 320px) {
+      font-size: 16px;
+    }
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  color: #000000;
+
+  font-weight: 500;
+  align-content: center;
+}
+
+.header-date {
+  width: 240px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  align-content: center;
+  color: #0000008a;
+}
+
+.card {
+  @media screen {
+    @media (min-width: 320px) {
+      margin-top: 24px;
+    }
+    @media (min-width: 768px) {
+      margin-top: 40px;
+      padding: 32px;
+      display: block;
+      width: 450px;
+    }
+  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border: 1px solid #eaecf0;
+  margin-bottom: 20px;
+  width: 272px;
+  padding: 24px 0px;
+}
+
+.list-header {
+  color: #0000008a;
+  margin-bottom: 24px;
+}
+
+.list-item {
+  @media (min-width: 768px) {
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+  }
+  width: 208px;
+  border: 1px solid #d7dde9;
+  margin-bottom: 24px;
+  border-style: dashed;
+  text-align: left;
+  cursor: pointer;
+  padding: 16px 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: border-color 0.15s ease;
+  color: #000000;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.list-input {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.list-item:hover {
+  background-color: #f7f9fd;
+  border-color: transparent;
+}
+
+.card .list-item:last-child {
+  margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #a0dcf6;
+  border-color: #0796d3;
+  background-image: url("./Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list-item-text {
+  color: #0000008a;
+  text-decoration: line-through #0b0b0b69;
+}
+
+.add-button {
+  @media (min-width: 768px) {
+    width: 450px;
+  }
+  display: flex;
+  background: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+  width: 272px;
+  height: 51px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 8px;
+  opacity: 0px;
+  border: none;
+  border-color: transparent;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffffcc;
+  z-index: 1000;
+}
+
+@mixin modal-style($desktop-height) {
+  @media (min-width: 768px) {
+    width: 450px;
+    height: $desktop-height;
+    padding: 32px;
+  }
+  background-color: #fff;
+  background: #ffffff;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 24px;
+  gap: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 24px 48px -12px #1018282e;
+}
+
+.modal {
+  @include modal-style(286px);
+}
+
+.cancel-modal {
+  @include modal-style(232px);
+}
+
+.modal-header {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.modal-input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.modal-label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.modal-input {
+  @media (min-width: 768px) {
+    width: 386px;
+  }
+  margin-top: 8px;
+  width: 272px;
+  height: 51px;
+  padding: 16px;
+  gap: 16px;
+  border: 1px solid #d7dde9;
+  border-radius: 8px;
+  opacity: 0px;
+}
+
+.modal-exclude-text {
+  color: #0000008a;
+}
+
+.modal-buttons-container {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+  display: flex;
+  gap: 16px;
+  flex-direction: column-reverse;
+}
+
+@mixin button-style($background, $font-weight: 400, $color: inherit) {
+  @media (min-width: 768px) {
+    width: $desktop-button-width;
+  }
+  width: $button-width;
+  height: $button-height;
+  padding: $button-padding;
+  border-radius: $button-radius;
+  background: $background;
+  border: none;
+  font-size: $button-font-size;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+.modal-button {
+  &-cancel {
+    @include button-style($cancel-background);
+  }
+
+  &-confirm {
+    @include button-style($confirm-gradient, 500, $font-color);
+  }
+
+  &-exclude {
+    @include button-style($exclude-gradient, 500, $font-color);
+  }
+}
