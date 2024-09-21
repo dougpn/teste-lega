@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">Teste técnico</h1>
 
-## Getting Started
+<p align="center">Teste técnico que visa avaliar os conhecimentos de um desenvolvedor front-end</p>
 
-First, run the development server:
+<p align="center">
+ <a href="#Pré-requisitos">Rodando o Projeto</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#autor">Autor</a>
+</p>
+
+<h4 align="center"> 
+	Teste técnico para a empresa Legaplan
+</h4>
+
+<p align="center">
+
+<img width="1727" alt="Captura de Tela 2024-09-21 às 16 12 10" src="https://github.com/user-attachments/assets/b51bbdd0-8840-4f16-9e52-930274af6890">
+<img width="1727" alt="Captura de Tela 2024-09-21 às 16 19 51" src="https://github.com/user-attachments/assets/91d74c5a-b3f0-425a-8864-5e4be846b351">
+<img width="1728" alt="Captura de Tela 2024-09-21 às 16 20 06" src="https://github.com/user-attachments/assets/ebf41c86-c054-4aa8-b840-dc81bcfc104b">
+<img width="234" alt="Captura de Tela 2024-09-21 às 16 20 26" src="https://github.com/user-attachments/assets/c1a0dbc0-72ea-4fe5-943c-8cd3bd036aa2">
+<img width="234" alt="Captura de Tela 2024-09-21 às 16 20 44" src="https://github.com/user-attachments/assets/b09b3d01-5db3-4817-892b-695bcd0747c0">
+<img width="233" alt="Captura de Tela 2024-09-21 às 16 21 12" src="https://github.com/user-attachments/assets/f8f84212-b4ca-4c30-acea-8038ff23bd29">
+
+</p>
+
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### Rodando o Projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone este repositório
+$ git clone <https://github.com/dougpn/teste-lega>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd teste-lega
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm start
+
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
+### Tecnologias
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [React](https://pt-br.reactjs.org/)
+- [NextJs](https://nextjs.org/)
+- [Sass](https://sass-lang.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### Autor
 
-To learn more about Next.js, take a look at the following resources:
+<a href="https://github.com/dougpn/">
+ <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/62621650?s=400&u=d9672bc16aaaf1fd2b3df06d7e42068ffec48525&v=4" width="100px />
+ <br />
+ <sub><b>Douglas Neves</b></sub></a> <a href="https://github.com/dougpn" ></a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feito com ❤️ por Douglas Neves 👋🏽 Entre em contato!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Linkedin Badge](https://img.shields.io/badge/-Douglas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/douglaspneves/)](https://www.linkedin.com/in/douglaspneves/) 
+[![Gmail Badge](https://img.shields.io/badge/-nevesdouglasp@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nevesdouglasp@gmail.com)](mailto:nevesdouglasp@gmail.com)
